@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Same Day Dispatch | Fast & Reliable Courier Service</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="contact-info">
+                <span><i class="fas fa-phone-alt me-1"></i> Call us at: <strong>0800 999 1010</strong></span>
+            </div>
+            <div class="top-actions">
+                <a href="#" class="btn btn-warning btn-sm me-2">GET A QUOTE</a>
+                <a href="#" class="btn btn-outline-light btn-sm me-2">APPLY FOR ACCOUNT</a>
+                <a href="#" class="btn btn-outline-light btn-sm">LOG IN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Same Day Dispatch" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Same Day Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pallets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Help
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-md-6">
+                    <div class="hero-content text-white">
+                        <h1 class="display-4 fw-bold mb-4">Let's Get Things<br>Moving For You</h1>
+                        <p class="mb-4">Request A Fully Costed Courier Quote</p>
+                        <div class="contact-number mb-3">
+                            <h2 class="display-5 fw-bold">0800 999 1010</h2>
+                            <p>samedaydispatch.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="quote-form-section py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="section-title">One Quick Form. One Fast Reply</h2>
+                <h3 class="section-subtitle">One Reliable Delivery Solution.</h3>
+               <img src="images/Vector.png" alt="underline" class="section-underline mx-auto">
+            </div>
+
+            <!-- Multi-step Form -->
+            <div class="form-container">
+                <div class="multi-step-form">
+                    <!-- Progress Bar -->
+                    <div class="progress-container mb-5">
+                        <div class="step-indicators d-flex justify-content-center">
+                            <div class="step-item">
+                                <div class="step-circle active">1</div>
+                            </div>
+                            <div class="step-line">
+                                <div class="line active"></div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-circle">2</div>
+                            </div>
+                            <div class="step-line">
+                                <div class="line"></div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-circle">3</div>
+                            </div>
+                            <div class="step-line">
+                                <div class="line"></div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-circle">4</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Steps -->
+                    <form id="quoteForm">
+                        <!-- Step 1: Service Selection -->
+                        <div class="form-step active" id="step1">
+                            <h4 class="form-step-title mb-3">Select Service Type</h4>
+                            <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisic.</p>
+
+                            <div class="row g-4">
+                                <!-- UK/EUROPE Time-Critical Courier -->
+                                <div class="col-md-4">
+                                    <div class="service-card selected">
+                                        <div class="service-images">
+                                            <div class="row g-0">
+                                                <div class="col-12">
+                                                    <!-- <div class="image-tag">UK / EU SERVICE</div> -->
+                                                    <img src="images/services/uk-europe.png" alt="UK service"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-info p-3">
+                                            <h5 class="service-name">UK/EUROPE Time-Critical Courier</h5>
+                                            <p class="service-description">Urgent deliveries by road across the UK and
+                                                Europe — any size, any weight</p>
+                                            <button class="select-btn">SELECT SERVICE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- UK & Ireland Pallet Service -->
+                                <div class="col-md-4">
+                                    <div class="service-card">
+                                        <div class="service-images">
+                                            <div class="row g-0">
+                                                <div class="col-12">
+                                                    <img src="images/services/uk-ireland.png" alt="UK service"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-info p-3">
+                                            <h5 class="service-name">UK & Ireland Pallet Service</h5>
+                                            <p class="service-description">Consolidated pallet freight across the UK and
+                                                between the UK and Ireland.</p>
+                                            <button class="select-btn">SELECT SERVICE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- UK Non-Standard Economy -->
+                                <div class="col-md-4">
+                                    <div class="service-card">
+                                        <div class="service-images">
+                                            <div class="row g-0">
+                                                <div class="col-12">
+                                                    <img src="images/services/uk-non.png" alt="UK service"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-info p-3">
+                                            <h5 class="service-name">UK Non-Standard Economy</h5>
+                                            <p class="service-description">Next-day UK shared van service for fragile,
+                                                high-value or unpackaged items.</p>
+                                            <button class="select-btn">SELECT SERVICE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- International Docs & Parcels -->
+                                <div class="col-md-4">
+                                    <div class="service-card">
+                                        <div class="service-images">
+                                            <div class="row g-0">
+                                                <div class="col-12">
+                                                    <img src="images/services/international.png" alt="UK service"
+                                                        class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-info p-3">
+                                            <h5 class="service-name">International Docs & Parcels</h5>
+                                            <p class="service-description">Consolidated air service for documents and
+                                                parcels under 50kg worldwide.</p>
+                                            <button class="select-btn">SELECT SERVICE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- International Freight -->
+                                <div class="col-md-4">
+                                    <div class="service-card">
+                                        <div class="service-images">
+                                            <div class="row g-0">
+                                                <div class="col-12">
+                                                    <img src="images/services/international-freight.png"
+                                                        alt="UK service" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-info p-3">
+                                            <h5 class="service-name">International Freight</h5>
+                                            <p class="service-description">Consolidated heavy freight services by air,
+                                                road or sea worldwide.</p>
+                                            <button class="select-btn">SELECT SERVICE</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- International On-Board Courier -->
+                                <div class="col-md-4">
+                                    <div class="service-card">
+                                        <div class="service-images">
+                                            <div class="row g-0">
+                                                <div class="col-12">
+                                                    <img src="images/services/international-courier.png"
+                                                        alt="UK service" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service-info p-3">
+                                            <h5 class="service-name">International On-Board Courier</h5>
+                                            <p class="service-description">Hand-carry courier for critical items to or
+                                                from any global destination.</p>
+                                            <button class="select-btn">SELECT SERVICE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Vehicle Selection -->
+                        <div class="form-step" id="step2">
+                            <h4 class="form-step-title mb-4">Select Vehicle Type</h4>
+                            <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+
+                            <div class="row g-4">
+                                <!-- Small Van -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">Small Van</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/small-van.png" alt="Small Van"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Transit Van -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">Transit Van</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/transit-van.png" alt="Transit Van"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- LWB Transit -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="lwb-transit">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">LWB Transit</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/lwb-van.png" alt="LWB Transit"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- XLWB Transit -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="xlwb-transit">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">XLWB Transit</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/xlwb-van.png" alt="XLWB Transit"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Luton Van -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="luton-van">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">Luton Van</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/luto-van.png" alt="Luton Van"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 7.5t Lorry -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="7.5t-lorry">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">7.5t Lorry</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/7.5t-van.png" alt="7.5t Lorry"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 18t Lorry -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="18t-lorry">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">18t Lorry</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/18-van.png" alt="18t Lorry" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 26t Lorry -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="26t-lorry">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">26t Lorry</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/26-van.png" alt="26t Lorry" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 13.6m (Artic) -->
+                                <div class="col-md-4">
+                                    <div class="vehicle-option" data-vehicle="13.6m-artic">
+                                        <div class="vehicle-card">
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span class="vehicle-name">13.6m (Artic)</span>
+                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                            </div>
+                                            <div class="vehicle-image">
+                                                <img src="images/vehicles/13.6-van.png" alt="13.6m (Artic)"
+                                                    class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Step 3: Journey Details Form -->
+                        <div class="form-step" id="step3">
+                            <h4 class="form-step-title mb-4">Add Journey Details</h4>
+                            <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisc.</p>
+
+                            <div class="row">
+                                <!-- Collection Section -->
+                                <div class="col-md-6 pe-md-2">
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="section-title d-flex align-items-center">
+                                            <h5 class="mb-0">Collection</h5>
+                                            <span class="ms-2 info-icon">
+                                                <i class="bi bi-info-circle text-muted"></i>
+                                            </span>
+                                        </div>
+                                        <button type="button" class="btn btn-link text-primary p-0 add-point-btn">
+                                            <i class="bi bi-plus-lg me-1"></i> ADD COLLECTION POINT
+                                        </button>
+                                    </div>
+
+                                    <!-- Collection Point 1 -->
+                                    <div class="card mb-3">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center w-100">
+                                                <span class="drag-handle me-3">
+                                                    <i class="bi bi-grip-vertical"></i>
+                                                </span>
+                                                <div class="d-flex justify-content-between align-items-center w-100">
+                                                    <div>
+                                                        <small class="text-muted">Stop 1:</small>
+                                                        <div>Via - London</div>
+                                                    </div>
+                                                    <button class="collapse-icon btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collection1-body" aria-expanded="true">
+                                                        <i class="bi bi-chevron-up"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse show" id="collection1-body">
+                                            <div class="card-body">
+                                                <div class="mb-3">
+                                                    <label for="collection-country" class="form-label">Country<span
+                                                            class="text-danger">*</span></label>
+                                                    <select class="form-select" id="collection-country" required>
+                                                        <option value="" selected>Select country</option>
+                                                        <option value="uk">United Kingdom</option>
+                                                        <option value="us">United States</option>
+                                                        <option value="ca">Canada</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="collection-postcode" class="form-label">Collection
+                                                        Postcode<span class="text-danger">*</span></label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="collection-postcode"
+                                                            value="W1A 1AA" required>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="collection-date" class="form-label">Date<span
+                                                            class="text-danger">*</span></label>
+                                                    <input type="text" class="form-control" id="collection-date"
+                                                        placeholder="Select date" required>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="ready-at" class="form-label">Ready At<span
+                                                                class="text-danger">*</span></label>
+                                                        <select class="form-select" id="ready-at" required>
+                                                            <option value="" selected>Ready at</option>
+                                                            <option value="9:00">9:00 AM</option>
+                                                            <option value="10:00">10:00 AM</option>
+                                                            <option value="11:00">11:00 AM</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="collect-by" class="form-label">Collect By<span
+                                                                class="text-danger">*</span></label>
+                                                        <select class="form-select" id="collect-by" required>
+                                                            <option value="" selected>Collect by</option>
+                                                            <option value="15:00">3:00 PM</option>
+                                                            <option value="16:00">4:00 PM</option>
+                                                            <option value="17:00">5:00 PM</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="collection-helper" checked>
+                                                        <label class="form-check-label" for="collection-helper">
+                                                            Helper
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Collection Point 2 -->
+                                    <div class="card mb-3">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <span class="drag-handle me-3">
+                                                    <i class="bi bi-grip-vertical"></i>
+                                                </span>
+                                                <div>
+                                                    <small class="text-muted">Stop 2:</small>
+                                                    <div>Via - Bristol</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body collapse" id="collection2-body">
+                                            <!-- This content would be similar to Collection Point 1 -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Delivery Section -->
+                                <div class="col-md-6 ps-md-2">
+                                    <div class="mb-3 d-flex justify-content-between align-items-center">
+                                        <div class="section-title d-flex align-items-center">
+                                            <h5 class="mb-0">Delivery</h5>
+                                            <span class="ms-2 info-icon">
+                                                <i class="bi bi-info-circle text-warning"></i>
+                                            </span>
+                                        </div>
+                                        <button type="button" class="btn btn-link text-primary p-0 add-point-btn">
+                                            <i class="bi bi-plus-lg me-1"></i> ADD DELIVERY POINT
+                                        </button>
+                                    </div>
+
+                                    <!-- Delivery Point 1 -->
+                                    <div class="card mb-3 card-border position-relative">
+                                        <div class="card-header d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <span class="drag-handle me-3">
+                                                    <i class="bi bi-grip-vertical"></i>
+                                                </span>
+                                                <div>
+                                                    <small class="text-muted">Stop 1:</small>
+                                                    <div>Via - Maryland</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body collapse show" id="delivery1-body">
+                                            <div class="mb-3">
+                                                <label for="delivery-country" class="form-label">Country<span
+                                                        class="text-danger">*</span></label>
+                                                <select class="form-select" id="delivery-country" required>
+                                                    <option value="" selected>Select country</option>
+                                                    <option value="uk">United Kingdom</option>
+                                                    <option value="us">United States</option>
+                                                    <option value="ca">Canada</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="delivery-postcode" class="form-label">Delivery Postcode<span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control is-invalid"
+                                                    id="delivery-postcode" placeholder="LNDN 123" required>
+                                                <!-- <div class="invalid-feedback">
+                                                    <i class="bi bi-exclamation-triangle me-1"></i>Invalid postcode
+                                                </div> -->
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="delivery-date" class="form-label">Date<span
+                                                        class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="delivery-date"
+                                                    placeholder="Select date" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="deliver-by" class="form-label">Deliver By<span
+                                                        class="text-danger">*</span></label>
+                                                <select class="form-select" id="deliver-by" required>
+                                                    <option value="" selected>Deliver by</option>
+                                                    <option value="15:00">3:00 PM</option>
+                                                    <option value="16:00">4:00 PM</option>
+                                                    <option value="17:00">5:00 PM</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="delivery-helper"
+                                                        checked>
+                                                    <label class="form-check-label" for="delivery-helper">
+                                                        Helper
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Helper Info Tooltip -->
+                            <div class="position-absolute helper-info-tooltip"
+                                style="bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 100;">
+                                <div class="card shadow-sm">
+                                    <div class="card-body p-2 text-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <i class="bi bi-info-circle me-2"></i>
+                                            <small>Helper can be booked if extra assistance is required at either
+                                                collection or delivery</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Additional Information -->
+                        <div class="form-step" id="step4">
+                            <h4 class="form-step-title mb-4">Your Details</h4>
+                            <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
+
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="contact-name" class="form-label">First Name<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" id="first-name" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="email" class="form-label">Email<span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" placeholder="user@gmail.com" id="email" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="contact-number" class="form-label">Contact Number<span
+                                            class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="contact-number" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="form-navigation mt-4 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-secondary me-2" id="prevBtn">BACK</button>
+                            <button type="button" class="btn btn-primary" id="nextBtn">NEXT STEP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this right before the closing body tag -->
+    <div class="vehicle-info-modal modal fade" id="vehicleInfoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Vehicle Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="vehicle-specs">
+                        <div class="section body-type">
+                            <h3 class="section-title">Body Type</h3>
+                            <div class="body-type-options">
+                                <button class="option-btn">Box/Panel</button>
+                                <button class="option-btn active">Curtain-Sider</button>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox-input" checked>
+                                    Tail Lift
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox-input" checked>
+                                    ADR
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" class="checkbox-input">
+                                    Temperature Controlled
+                                </label>
+                            </div>
+                        </div>
+                        <div class="section vehicle-info">
+                            <h3 class="section-title">Vehicle Information</h3>
+
+                            <div class="info-row">
+                                <span class="info-label">Internal Length</span>
+                                <span class="info-value">7M</span>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="info-label">Internal Width</span>
+                                <span class="info-value">2.4M</span>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="info-label">Internal Height</span>
+                                <span class="info-value">2.5M</span>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="info-label">Loadspace Volume</span>
+                                <span class="info-value">40M³</span>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="info-label">Maximum Carrying Capacity</span>
+                                <span class="info-value">8500kg</span>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="info-label">Pallet capacity (Standard/Euro)</span>
+                                <span class="info-value">14</span>
+                            </div>
+
+                            <div class="info-row">
+                                <span class="info-label">Tail Lift Carrying Capacity</span>
+                                <span class="info-value">1000kg</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
