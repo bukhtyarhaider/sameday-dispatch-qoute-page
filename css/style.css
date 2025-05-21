@@ -92,7 +92,7 @@ body {
 
 /* Quote Form Section */
 .section-title {
-    font-size: 42px;
+    font-size: 20px;
     margin-bottom: 0.5rem;
 }
 
@@ -129,7 +129,6 @@ body {
 /* Progress Steps */
 .progress-container {
     margin-bottom: 30px;
-    border-bottom: #807f7f 1px solid;
 }
 
 .step-indicators {
@@ -164,20 +163,26 @@ body {
 
 .step-line {
     flex-grow: 1;
-    height: 2px;
+    height: 4px;
     position: relative;
     z-index: 1;
     max-width: 80px;
+    margin: 0 10px;
 }
 
 .step-line .line {
     height: 100%;
     width: 100%;
+    border-radius: 4px;
     background-color: #e0e0e0;
 }
 
 .step-line .line.active {
-    background-color: var(--primary-color);
+    background: linear-gradient(
+        to right,
+        var(--primary-color) 50%,
+        #e0e0e0 50%
+    );
 }
 
 /* Service Cards Styling */
@@ -300,7 +305,7 @@ body {
 .radio-btn-group {
     margin-bottom: 10px;
     border-radius: 6px;
-    border: 1px solid #ddd;
+    border: 1px solid #0E56A7;
     cursor: pointer;
     padding: 8px 16px;
 }
@@ -312,11 +317,11 @@ body {
 }
 
 .radio-input:checked + .radio-label {
-    border-color: #0d6efd;
+    border-color: #0E56A7;
 }
 
 .radio-label:hover {
-    border-color: #0d6efd;
+    border-color: #0E56A7;
 }
 
 .vehicle-info-modal .modal-content {
@@ -338,8 +343,11 @@ body {
 }
 
 .vehicle-info-modal .btn-close {
-    font-size: 20px;
-    color: #999;
+    font-size: 12px;
+    padding: 0.5rem;
+    color: #6C757D;
+    border-radius: 50%;
+    background-color: #EFF0F6;
 }
 
 /* Section styles */
@@ -416,6 +424,7 @@ body {
 
 .vehicle-info-modal .info-label {
     color: #666;
+    font-size: 16px;
 }
 
 .vehicle-info-modal .info-value {
@@ -466,9 +475,10 @@ body {
 }
 
 .add-point-btn {
-    font-size: 0.85rem;
+    font-size: 14px;
     font-weight: 500;
     text-decoration: none;
+    color: #0E56A7;
 }
 
 .helper-tooltip,
@@ -479,6 +489,10 @@ body {
 
 .helper-info-tooltip .card-body {
     max-width: 300px;
+}
+
+.label-text{
+    color: #0E56A7;
 }
 
 /* Make the tooltip appear */
@@ -547,7 +561,23 @@ body {
 }
 
 .info-icon {
-    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #0E56A7;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.info-icon i {
+    font-size: 14px;
+    color: #0E56A7;
+    padding: 7px;
 }
 
 .vehicle-image {
@@ -626,7 +656,43 @@ body {
 
 /* Card Header Styles */
 .card-header {
+    padding: 1rem;
     background-color: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.75rem 1rem;
+}
+
+.action-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-btn {
+    border: 1px solid #dee2e6;
+    background: white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.icon-btn.delete:hover {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.icon-btn i {
+    font-size: 14px;
+    color: #666;
+}
+
+.icon-btn.delete i {
+    color: #dc3545;
 }
