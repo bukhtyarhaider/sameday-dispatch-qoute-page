@@ -22,30 +22,42 @@ document.addEventListener('DOMContentLoaded', function() {
             serviceCards.forEach(card => {
                 card.classList.remove('selected');
                 
-                // Change button text back to "SELECT SERVICE" for all cards
-                const buttonElement = card.querySelector('.select-btn');
-                if (buttonElement) {
-                    buttonElement.textContent = 'SELECT SERVICE';
-                }
+                // Get the service info section
+                const serviceInfo = card.querySelector('.service-info');
                 
-                // Remove "SELECTED" badge from info section if exists
-                const existingBadge = card.querySelector('.selected-badge');
+                // Remove any existing selected badge
+                const existingBadge = serviceInfo.querySelector('.selected-badge');
                 if (existingBadge) {
                     existingBadge.remove();
                 }
+                
+                // Ensure the select button exists and shows correct text
+                let selectBtn = serviceInfo.querySelector('.select-btn');
+                if (!selectBtn) {
+                    // If button doesn't exist, create it
+                    selectBtn = document.createElement('button');
+                    selectBtn.className = 'select-btn';
+                    serviceInfo.appendChild(selectBtn);
+                }
+                selectBtn.textContent = 'SELECT SERVICE';
+                selectBtn.style.display = 'block';
             });
             
             // Add selection to clicked card
             parentCard.classList.add('selected');
             
-            // Replace button with "SELECTED" badge
-            const serviceInfo = parentCard.querySelector('.service-info');
-            this.remove();
+            // Hide the button and show selected badge
+            this.style.display = 'none';
             
-            const selectedBadge = document.createElement('div');
-            selectedBadge.className = 'selected-badge';
-            selectedBadge.textContent = 'SELECTED';
-            serviceInfo.appendChild(selectedBadge);
+            const serviceInfo = parentCard.querySelector('.service-info');
+            let selectedBadge = serviceInfo.querySelector('.selected-badge');
+            
+            if (!selectedBadge) {
+                selectedBadge = document.createElement('div');
+                selectedBadge.className = 'selected-badge';
+                selectedBadge.textContent = 'SELECTED';
+                serviceInfo.appendChild(selectedBadge);
+            }
             
             // Enable the next button
             document.getElementById('nextBtn').disabled = false;
@@ -337,6 +349,33 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 bsCollapse.show();
             }
+        });
+    });
+
+    // Add collapse icon rotation
+    document.querySelectorAll('.collapse-icon').forEach(button => {
+        button.addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            icon.classList.toggle('bi-chevron-up');
+            icon.classList.toggle('bi-chevron-down');
+        });
+    });
+
+    // Initialize all collapse elements
+    const collapseElements = document.querySelectorAll('.collapse');
+    collapseElements.forEach(collapse => {
+        collapse.addEventListener('show.bs.collapse', function() {
+            const button = document.querySelector(`[data-bs-target="#${this.id}"]`);
+            const icon = button.querySelector('i');
+            icon.classList.remove('bi-chevron-down');
+            icon.classList.add('bi-chevron-up');
+        });
+
+        collapse.addEventListener('hide.bs.collapse', function() {
+            const button = document.querySelector(`[data-bs-target="#${this.id}"]`);
+            const icon = button.querySelector('i');
+            icon.classList.remove('bi-chevron-up');
+            icon.classList.add('bi-chevron-down');
         });
     });
 });
