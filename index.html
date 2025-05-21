@@ -76,12 +76,8 @@
             <div class="row align-items-center min-vh-50">
                 <div class="col-md-6">
                     <div class="hero-content text-white">
-                        <h1 class="display-4 fw-bold mb-4">Let's Get Things<br>Moving For You</h1>
-                        <p class="mb-4">Request A Fully Costed Courier Quote</p>
-                        <div class="contact-number mb-3">
-                            <h2 class="display-5 fw-bold">0800 999 1010</h2>
-                            <p>samedaydispatch.co.uk</p>
-                        </div>
+                        <h1 class="display-4 hero-heading fw-bold mb-4">Let's Get Things<br>Moving For You</h1>
+                        <h1 class="mb-4 hero-subheading fw-semibold">Request A Fully Costed Courier Quote</h1>
                     </div>
                 </div>
             </div>
@@ -91,9 +87,9 @@
     <!-- Quote Form Section -->
     <section class="quote-form-section py-5">
         <div class="container">
-            <div class="text-center mb-4">
-                <h2 class="section-title">One Quick Form. One Fast Reply</h2>
-                <h3 class="section-subtitle">One Reliable Delivery Solution.</h3>
+            <div class="text-center py-5 mb-4">
+                <h2 class="section-title fw-semibold">One Quick Form. One Fast Reply</h2>
+                <h3 class="section-subtitle fw-semibold">One Reliable Delivery Solution.</h3>
                <img src="images/Vector.png" alt="underline" class="section-underline mx-auto">
             </div>
 
@@ -131,7 +127,7 @@
                     <form id="quoteForm">
                         <!-- Step 1: Service Selection -->
                         <div class="form-step active" id="step1">
-                            <h4 class="form-step-title mb-3">Select Service Type</h4>
+                            <h4 class="form-step-title">Select Service Type</h4>
                             <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisic.</p>
 
                             <div class="row g-4">
@@ -260,7 +256,7 @@
 
                         <!-- Step 2: Vehicle Selection -->
                         <div class="form-step" id="step2">
-                            <h4 class="form-step-title mb-4">Select Vehicle Type</h4>
+                            <h4 class="form-step-title">Select Vehicle Type</h4>
                             <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
 
                             <div class="row g-4">
@@ -270,7 +266,7 @@
                                         <div class="vehicle-card">
                                             <div class="d-flex justify-content-between mb-2">
                                                 <span class="vehicle-name">Small Van</span>
-                                                <span class="info-icon"><i class="fas fa-info-circle"></i></span>
+                                                <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
                                             </div>
                                             <div class="vehicle-image">
                                                 <img src="images/vehicles/small-van.png" alt="Small Van"
@@ -645,8 +641,9 @@
 
                         <!-- Navigation Buttons -->
                         <div class="form-navigation mt-4 d-flex justify-content-end">
+                            <button type="button" class="btn btn-outline-primary me-2" id="cancelBtn">Cancel</button>
                             <button type="button" class="btn btn-outline-secondary me-2" id="prevBtn">BACK</button>
-                            <button type="button" class="btn btn-primary" id="nextBtn">NEXT STEP</button>
+                            <button type="button" class="next-btn-color" id="nextBtn">NEXT STEP</button>
                         </div>
                     </form>
                 </div>
@@ -659,16 +656,23 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Vehicle Information</h5>
+                    <!-- <h5 class="modal-title">Vehicle Information</h5> -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="vehicle-specs">
                         <div class="section body-type">
-                            <h3 class="section-title">Body Type</h3>
+                            <h3 class="section-title fw-semibold">Body Type</h3>
+                            <hr class="section-divider mb-3">
                             <div class="body-type-options">
-                                <button class="option-btn">Box/Panel</button>
-                                <button class="option-btn active">Curtain-Sider</button>
+                                <div class="radio-btn-group">
+                                    <input type="radio" id="box-panel" name="body-type" class="radio-input">
+                                    <label for="box-panel" class="radio-label">Box/Panel</label>
+                                </div>
+                                <div class="radio-btn-group">
+                                    <input type="radio" id="curtain-sider" name="body-type" class="radio-input" checked>
+                                    <label for="curtain-sider" class="radio-label">Curtain-Sider</label>
+                                </div>
                             </div>
 
                             <div class="checkbox-group">
@@ -693,8 +697,8 @@
                             </div>
                         </div>
                         <div class="section vehicle-info">
-                            <h3 class="section-title">Vehicle Information</h3>
-
+                            <h3 class="section-title fw-semibold">Vehicle Information</h3>
+                            <hr class="section-divider mb-3">
                             <div class="info-row">
                                 <span class="info-label">Internal Length</span>
                                 <span class="info-value">7M</span>
