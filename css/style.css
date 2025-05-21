@@ -696,3 +696,11 @@ body {
 .icon-btn.delete i {
     color: #dc3545;
 }
+
+.step-1-only {
+    display: none;
+}
+
+.form-step.active[id="step1"] ~ .form-navigation .step-1-only {
+    display: block;
+}

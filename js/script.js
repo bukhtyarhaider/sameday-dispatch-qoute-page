@@ -203,6 +203,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectedVehicle = document.querySelector('.vehicle-option.selected');
             nextBtn.disabled = !selectedVehicle;
         }
+
+        // Show/hide cancel button based on step
+        const cancelBtn = document.getElementById('cancelBtn');
+        if (cancelBtn) {
+            cancelBtn.style.display = currentStep === 0 ? 'block' : 'none';
+        }
     }
 
     // Responsive adjustments
