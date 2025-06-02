@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+
 </head>
 
 <body>
@@ -29,12 +32,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Same Day Dispatch" height="50"></a>
+            <a class="navbar-brand" href="#"><img src="images/Same-Day-Delivery.png" alt="Same Day Dispatch" height="50"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-collapse nav-collapse collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Home</a>
@@ -89,8 +92,8 @@
         <div class="container">
             <div class="text-center py-5 mb-4">
                 <h2 class="section-title fw-semibold">One Quick Form. One Fast Reply</h2>
-                <h3 class="section-subtitle fw-semibold">One Reliable Delivery Solution.</h3>
-               <img src="images/Vector.png" alt="underline" class="section-underline mx-auto">
+                <h3 class="section-subtitle fw-bold">One Reliable Delivery Solution.</h3>
+                <img src="images/Vector.png" alt="underline" class="section-underline mx-auto d-block img-fluid">
             </div>
 
             <!-- Multi-step Form -->
@@ -134,17 +137,16 @@
                             <div class="row g-4">
                                 <!-- UK/EUROPE Time-Critical Courier -->
                                 <div class="col-md-4">
-                                    <div class="service-card selected">
+                                    <div class="service-card">
                                         <div class="service-images">
                                             <div class="row g-0">
                                                 <div class="col-12">
-                                                    <!-- <div class="image-tag">UK / EU SERVICE</div> -->
                                                     <img src="images/services/uk-europe.png" alt="UK service"
-                                                        class="img-fluid">
+                                                        class="img-fluid img-rad">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service-info p-3">
+                                        <div class="service-info pt-3 pb-3">
                                             <h5 class="service-name">UK/EUROPE Time-Critical Courier</h5>
                                             <p class="service-description">Urgent deliveries by road across the UK and
                                                 Europe — any size, any weight</p>
@@ -160,11 +162,11 @@
                                             <div class="row g-0">
                                                 <div class="col-12">
                                                     <img src="images/services/uk-ireland.png" alt="UK service"
-                                                        class="img-fluid">
+                                                        class="img-fluid img-rad">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service-info p-3">
+                                        <div class="service-info pt-3 pb-3">
                                             <h5 class="service-name">UK & Ireland Pallet Service</h5>
                                             <p class="service-description">Consolidated pallet freight across the UK and
                                                 between the UK and Ireland.</p>
@@ -180,11 +182,11 @@
                                             <div class="row g-0">
                                                 <div class="col-12">
                                                     <img src="images/services/uk-non.png" alt="UK service"
-                                                        class="img-fluid">
+                                                        class="img-fluid img-rad">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service-info p-3">
+                                        <div class="service-info pt-3 pb-3">
                                             <h5 class="service-name">UK Non-Standard Economy</h5>
                                             <p class="service-description">Next-day UK shared van service for fragile,
                                                 high-value or unpackaged items.</p>
@@ -200,11 +202,11 @@
                                             <div class="row g-0">
                                                 <div class="col-12">
                                                     <img src="images/services/international.png" alt="UK service"
-                                                        class="img-fluid">
+                                                        class="img-fluid img-rad">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service-info p-3">
+                                        <div class="service-info pt-3 pb-3">
                                             <h5 class="service-name">International Docs & Parcels</h5>
                                             <p class="service-description">Consolidated air service for documents and
                                                 parcels under 50kg worldwide.</p>
@@ -220,11 +222,11 @@
                                             <div class="row g-0">
                                                 <div class="col-12">
                                                     <img src="images/services/international-freight.png"
-                                                        alt="UK service" class="img-fluid">
+                                                        alt="UK service" class="img-fluid img-rad">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service-info p-3">
+                                        <div class="service-info pt-3 pb-3">
                                             <h5 class="service-name">International Freight</h5>
                                             <p class="service-description">Consolidated heavy freight services by air,
                                                 road or sea worldwide.</p>
@@ -240,11 +242,11 @@
                                             <div class="row g-0">
                                                 <div class="col-12">
                                                     <img src="images/services/international-courier.png"
-                                                        alt="UK service" class="img-fluid">
+                                                        alt="UK service" class="img-fluid img-rad">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="service-info p-3">
+                                        <div class="service-info pt-3 pb-3">
                                             <h5 class="service-name">International On-Board Courier</h5>
                                             <p class="service-description">Hand-carry courier for critical items to or
                                                 from any global destination.</p>
@@ -260,284 +262,374 @@
                             <h4 class="form-step-title">Select Vehicle Type</h4>
                             <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipiscing.</p>
 
-                            <div class="row g-4">
-                                <!-- Small Van -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">Small Van</span>
-                                                <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/small-van.png" alt="Small Van"
-                                                    class="img-fluid">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Transit Van -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">Transit Van</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/transit-van.png" alt="Transit Van"
-                                                    class="img-fluid">
+                            <!-- Vehicle Selection Form (for Time-Critical Courier) -->
+                            <div id="vehicleSelectionForm" style="display: none;">
+                                <div class="row g-4">
+                                    <!-- Small Van -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="small-van">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">Small Van
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/small-van.png" alt="Small Van"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- LWB Transit -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="lwb-transit">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">LWB Transit</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/lwb-van.png" alt="LWB Transit"
-                                                    class="img-fluid">
+                                    <!-- Transit Van -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="transit-van">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">Transit Van
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/transit-van.png" alt="Transit Van"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- XLWB Transit -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="xlwb-transit">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">XLWB Transit</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/xlwb-van.png" alt="XLWB Transit"
-                                                    class="img-fluid">
+                                    <!-- LWB Transit -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="lwb-transit">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">LWB Transit
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/lwb-van.png" alt="LWB Transit"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Luton Van -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="luton-van">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">Luton Van</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/luto-van.png" alt="Luton Van"
-                                                    class="img-fluid">
+                                    <!-- XLWB Transit -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="xlwb-transit">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">XLWB Transit
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/xlwb-van.png" alt="XLWB Transit"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- 7.5t Lorry -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="7.5t-lorry">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">7.5t Lorry</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/7.5t-van.png" alt="7.5t Lorry"
-                                                    class="img-fluid">
+                                    <!-- Luton Van -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="luton-van">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">Luton Van
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/luto-van.png" alt="Luton Van"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- 18t Lorry -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="18t-lorry">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">18t Lorry</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/18-van.png" alt="18t Lorry" class="img-fluid">
+                                    <!-- 7.5t Lorry -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="7.5t-lorry">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">7.5t Lorry
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/7.5t-van.png" alt="7.5t Lorry"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- 26t Lorry -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="26t-lorry">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">26t Lorry</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
-                                            </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/26-van.png" alt="26t Lorry" class="img-fluid">
+                                    <!-- 18t Lorry -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="18t-lorry">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">18t Lorry
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/18-van.png" alt="18t Lorry" class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- 13.6m (Artic) -->
-                                <div class="col-md-4">
-                                    <div class="vehicle-option" data-vehicle="13.6m-artic">
-                                        <div class="vehicle-card">
-                                            <div class="d-flex justify-content-between mb-2">
-                                                <span class="vehicle-name">13.6m (Artic)</span>
-                                               <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                    <!-- 26t Lorry -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="26t-lorry">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">26t Lorry
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/26-van.png" alt="26t Lorry" class="img-fluid">
+                                                </div>
                                             </div>
-                                            <div class="vehicle-image">
-                                                <img src="images/vehicles/13.6-van.png" alt="13.6m (Artic)"
-                                                    class="img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <!-- 13.6m (Artic) -->
+                                    <div class="col-md-4">
+                                        <div class="vehicle-option" data-vehicle="13.6m-artic">
+                                            <div class="vehicle-card">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <span class="vehicle-name">13.6m (Artic)
+                                                        <span class="selected-badge-van"><i class="fas fa-check"></i></span>
+                                                    </span>
+                                                    <span class="info-icon"><i class="fas fa-ellipsis-vertical"></i></span>
+                                                </div>
+                                                <div class="vehicle-image">
+                                                    <img src="images/vehicles/13.6-van.png" alt="13.6m (Artic)"
+                                                        class="img-fluid">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
+                            <!-- Pallet Service Form -->
+                            <div id="palletServiceForm" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <label for="contents-description" class="form-label">Description of Contents<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="contents-description" required />
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <label for="collection" class="form-label">Collection<span class="text-danger">*</span></label>
+                                        <select class="form-select" id="collection" required>
+                                            <option value="" selected disabled>Select collection</option>
+                                            <option value="uk">UK Mainland</option>
+                                            <option value="ireland">Northern Ireland</option>
+                                            <option value="ireland">Southern Ireland</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="destination" class="form-label">Destination<span class="text-danger">*</span></label>
+                                        <select class="form-select" id="destination" required>
+                                            <option value="" selected disabled>Select destination</option>
+                                            <option value="uk">UK Mainland</option>
+                                            <option value="ireland">Northern Ireland</option>
+                                            <option value="ireland">Southern Ireland</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <label for="tariff-type" class="form-label">Tariff Type<span class="text-danger">*</span></label>
+                                        <select class="form-select" id="tariff-type" required>
+                                            <option value="" selected disabled>Select tariff type</option>
+                                            <option value="economy">Economy</option>
+                                            <option value="next-working-day">Next working day</option>
+                                            <option value="next-day">Next working day by 12:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- International Docs & Parcels Form -->
+                            <div id="docsParcelForm" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <label for="docs-contents-description" class="form-label">Description of Contents<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="docs-contents-description" placeholder="Enter description of contents" required />
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <label for="docs-tariff-type" class="form-label">Tariff Type<span class="text-danger">*</span></label>
+                                        <select class="form-select" id="docs-tariff-type" required>
+                                            <option value="" selected disabled>Select tariff type</option>
+                                            <option value="express">Express</option>
+                                            <option value="priority">Priority</option>
+                                            <option value="economy">Economy</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- International Freight Form -->
+                            <div id="freightForm" style="display: none;">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="freight-tariff-type" class="form-label">Tariff Type<span class="text-danger">*</span></label>
+                                        <select class="form-select" id="freight-tariff-type" required>
+                                            <option value="" selected disabled>Select tariff type</option>
+                                            <option value="express">Express</option>
+                                            <option value="economy">Economy</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <label for="transfer-type" class="form-label">Transfer Type<span class="text-danger">*</span></label>
+                                        <select class="form-select" id="transfer-type" required>
+                                            <option value="" selected disabled>Select transfer type</option>
+                                            <option value="door-to-door">Door to Door</option>
+                                            <option value="door-to-airport">Door to Airport</option>
+                                            <option value="airport-to-airport">Airport to Airport</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- Step 3: Journey Details Form -->
                         <div class="form-step" id="step3">
                             <h4 class="form-step-title">Add Journey Details</h4>
-                            <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adipisc.</p>
+                            <p class="text-muted mb-4">Lorem ipsum dolor sit amet consectetur adip.</p>
 
                             <div class="row">
                                 <!-- Collection Section -->
                                 <div class="col-md-6 pe-md-2">
                                     <div class="mb-3 d-flex justify-content-between align-items-center">
-                                        <div class="section-title d-flex align-items-center">
+                                        <div class="section-title-3 d-flex align-items-center">
                                             <h5 class="mb-0">Collection</h5>
                                             <span class="ms-2">
-                                                <i class="bi bi-info-circle text-muted"></i>
+                                                <i class="bi bi-info-circle text-muted" 
+                                                   data-bs-toggle="tooltip" 
+                                                   data-bs-placement="bottom" 
+                                                   title="Lorem ipsum dolor sit amet, consectetur elit."></i>
                                             </span>
                                         </div>
-                                        <button type="button" class="btn btn-link p-0 add-point-btn">
+                                        <button type="button" data-add-type="collection"
+                                            class="btn btn-link p-0 add-point-btn">
                                             <i class="bi bi-plus-lg me-1"></i> ADD COLLECTION POINT
                                         </button>
                                     </div>
 
-                                    <!-- Collection Point 1 -->
-                                    <div class="card mb-3">
-                                        <div class="card-header">
-                                            <div class="d-flex align-items-center w-100 mb-2">
-                                                <span class="drag-handle me-3">
-                                                    <i class="bi bi-grip-vertical"></i>
-                                                </span>
-                                                <div class="d-flex justify-content-between align-items-center w-100">
-                                                    <div>
-                                                        <small>Stop 1:</small>
-                                                        <div>Via - London</div>
-                                                    </div>
-                                                    <button class="collapse-icon btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCollection1" aria-expanded="true">
-                                                        <i class="bi bi-chevron-up"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex justify-content-end">
-                                                <div class="action-icons">
-                                                    <button class="icon-btn">
-                                                        <i class="bi bi-arrow-up"></i>
-                                                    </button>
-                                                    <button class="icon-btn">
-                                                        <i class="bi bi-arrow-down"></i>
-                                                    </button>
-                                                    <button class="icon-btn delete">
-                                                        <i class="bi bi-trash"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="collapse show" id="collapseCollection1">
-                                            <div class="card-body">
-                                                <div class="mb-3">
-                                                    <label for="collection-country" class="form-label">Country<span
-                                                            class="text-danger">*</span></label>
-                                                    <select class="form-select" id="collection-country" required>
-                                                        <option value="" selected>Select country</option>
-                                                        <option value="uk">United Kingdom</option>
-                                                        <option value="us">United States</option>
-                                                        <option value="ca">Canada</option>
-                                                    </select>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="collection-postcode" class="form-label">Collection
-                                                        Postcode<span class="text-danger">*</span></label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" id="collection-postcode"
-                                                            value="W1A 1AA" required>
+                                    <div id="collectionContainer">
+                                        <!-- Collection Point 1 -->
+                                        <div class="card collection-form mb-3" data-form-type="collection">
+                                            <div class="card-header">
+                                                <div class="d-flex align-items-center w-100 mb-2">
+                                                    <span class="drag-handle me-1">
+                                                        <i class="bi bi-grip-vertical"></i>
+                                                    </span>
+                                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                                        <div>
+                                                            <small>Stop 1:</small>
+                                                            <div>Via - London</div>
+                                                        </div>
+                                                        <button class="collapse-icon btn p-0" type="button"
+                                                            data-bs-toggle="collapse"
+                                                            data-bs-target="#collapseCollection1" 
+                                                            aria-expanded="true">
+                                                            <i class="bi bi-chevron-up"></i>
+                                                        </button>
                                                     </div>
                                                 </div>
-                                                <div class="mb-3">
-                                                    <label for="collection-date" class="form-label">Date<span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="date" class="form-control" id="collection-date"
-                                                        placeholder="Select date" required>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="ready-at" class="form-label">Ready At<span
+                                            </div>
+                                            <div class="collapse show" id="collapseCollection1">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-end mb-3">
+                                                        <div class="action-icons">
+                                                            <button class="icon-btn">
+                                                                <i class="bi bi-arrow-up"></i>
+                                                            </button>
+                                                            <button class="icon-btn">
+                                                                <i class="bi bi-arrow-down"></i>
+                                                            </button>
+                                                            <button class="icon-btn delete">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="collection-country" class="form-label">Country<span
                                                                 class="text-danger">*</span></label>
-                                                        <select class="form-select" id="ready-at" required>
-                                                            <option value="" selected>Ready at</option>
-                                                            <option value="9:00">9:00 AM</option>
-                                                            <option value="10:00">10:00 AM</option>
-                                                            <option value="11:00">11:00 AM</option>
+                                                        <select class="form-select" id="collection-country" required>
+                                                            <option value="" selected>Select country</option>
+                                                            <option value="uk">United Kingdom</option>
+                                                            <option value="us">United States</option>
+                                                            <option value="ca">Canada</option>
                                                         </select>
                                                     </div>
-                                                    <div class="col-md-6 mb-3">
-                                                        <label for="collect-by" class="form-label">Collect By<span
+                                                    <div class="mb-3">
+                                                        <label for="collection-postcode" class="form-label">Collection
+                                                            Postcode<span class="text-danger">*</span></label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control"
+                                                                id="collection-postcode" value="W1A 1AA" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="collection-date" class="form-label">Date<span
                                                                 class="text-danger">*</span></label>
-                                                        <select class="form-select" id="collect-by" required>
-                                                            <option value="" selected>Collect by</option>
-                                                            <option value="15:00">3:00 PM</option>
-                                                            <option value="16:00">4:00 PM</option>
-                                                            <option value="17:00">5:00 PM</option>
-                                                        </select>
+                                                        <input type="date" class="form-control" id="collection-date"
+                                                            placeholder="Select date" required>
                                                     </div>
-                                                </div>
-                                                <div class="mb-3">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox"
-                                                            id="collection-helper" checked>
-                                                        <label class="form-check-label label-text" for="collection-helper">
-                                                            Helper
-                                                        </label>
+                                                    <div class="row">
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="ready-at" class="form-label">Ready At<span
+                                                                    class="text-danger">*</span></label>
+                                                            <select class="form-select" id="ready-at" required>
+                                                                <option value="" selected>Ready at</option>
+                                                                <option value="9:00">9:00 AM</option>
+                                                                <option value="10:00">10:00 AM</option>
+                                                                <option value="11:00">11:00 AM</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-6 mb-3">
+                                                            <label for="collect-by" class="form-label">Collect By<span
+                                                                    class="text-danger">*</span></label>
+                                                            <select class="form-select" id="collect-by" required>
+                                                                <option value="" selected>Collect by</option>
+                                                                <option value="15:00">3:00 PM</option>
+                                                                <option value="16:00">4:00 PM</option>
+                                                                <option value="17:00">5:00 PM</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="collection-helper" checked>
+                                                            <label class="form-check-label label-text"
+                                                                for="collection-helper">
+                                                                Helper
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Collection Point 2 -->
-                                    <div class="card mb-3">
-                                        <div class="card-header d-flex justify-content-between align-items-center">
-                                            <div class="d-flex align-items-center w-100 mb-2">
-                                                <span class="drag-handle me-3">
-                                                    <i class="bi bi-grip-vertical"></i>
-                                                </span>
-                                                <div class="d-flex justify-content-between align-items-center w-100">
-                                                    <div>
-                                                        <small>Stop 2:</small>
-                                                        <div>Via - Brystal</div>
-                                                    </div>
-                                                    <button class="collapse-icon btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collection1-body" aria-expanded="true">
-                                                        <i class="bi bi-chevron-up"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-body collapse" id="collection2-body">
-                                            <!-- This content would be similar to Collection Point 1 -->
                                         </div>
                                     </div>
                                 </div>
@@ -545,107 +637,100 @@
                                 <!-- Delivery Section -->
                                 <div class="col-md-6 ps-md-2">
                                     <div class="mb-3 d-flex justify-content-between align-items-center">
-                                        <div class="section-title d-flex align-items-center">
+                                        <div class="section-title-3 d-flex align-items-center">
                                             <h5 class="mb-0">Delivery</h5>
                                             <span class="ms-2">
-                                                <i class="bi bi-info-circle text-warning"></i>
+                                                <i class="bi bi-info-circle text-warning" 
+                                                   data-bs-toggle="tooltip" 
+                                                   data-bs-placement="bottom" 
+                                                   title="Lorem ipsum dolor sit amet, consectetur elit."></i>
                                             </span>
                                         </div>
-                                        <button type="button" class="btn btn-link p-0 add-point-btn">
+                                        <button type="button" data-add-type="delivery"
+                                            class="btn btn-link p-0 add-point-btn">
                                             <i class="bi bi-plus-lg me-1"></i> ADD DELIVERY POINT
                                         </button>
                                     </div>
-
-                                    <!-- Delivery Point 1 -->
-                                    <div class="card mb-3 card-border position-relative">
-                                        <div class="card-header">
-                                            <div class="d-flex align-items-center w-100 mb-2">
-                                                <span class="drag-handle me-3">
-                                                    <i class="bi bi-grip-vertical"></i>
-                                                </span>
-                                                <div class="d-flex justify-content-between align-items-center w-100">
-                                                    <div>
-                                                        <small>Stop 1:</small>
-                                                        <div>Via - Maryaland</div>
+                                    <div id="deliveryContainer">
+                                        <!-- Delivery Point 1 -->
+                                        <div class="card collection-form mb-3 card-border" data-form-type="delivery">
+                                            <div class="card-header">
+                                                <div class="d-flex align-items-center w-100 mb-2">
+                                                    <span class="drag-handle me-1">
+                                                        <i class="bi bi-grip-vertical"></i>
+                                                    </span>
+                                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                                        <div>
+                                                            <small>Stop 1:</small>
+                                                            <div>Via - Maryland</div>
+                                                        </div>
+                                                        <button class="collapse-icon btn p-0" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseDelivery1"
+                                                            aria-expanded="true">
+                                                            <i class="bi bi-chevron-up"></i>
+                                                        </button>
                                                     </div>
-                                                    <button class="collapse-icon btn p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collection1-body" aria-expanded="true">
-                                                        <i class="bi bi-chevron-up"></i>
-                                                    </button>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-end">
-                                                <div class="action-icons">
-                                                    <button class="icon-btn">
-                                                        <i class="bi bi-arrow-up"></i>
-                                                    </button>
-                                                    <button class="icon-btn">
-                                                        <i class="bi bi-arrow-down"></i>
-                                                    </button>
-                                                    <button class="icon-btn delete">
-                                                        <i class="bi bi-trash"></i>
-                                                    </button>
+                                            <div class="collapse show" id="collapseDelivery1">
+                                                <div class="card-body">
+                                                    <div class="d-flex justify-content-end mb-3">
+                                                        <div class="action-icons">
+                                                            <button class="icon-btn">
+                                                                <i class="bi bi-arrow-up"></i>
+                                                            </button>
+                                                            <button class="icon-btn">
+                                                                <i class="bi bi-arrow-down"></i>
+                                                            </button>
+                                                            <button class="icon-btn delete">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="delivery-country" class="form-label">Country<span
+                                                                class="text-danger">*</span></label>
+                                                        <select class="form-select" id="delivery-country" required>
+                                                            <option value="" selected>Select country</option>
+                                                            <option value="uk">United Kingdom</option>
+                                                            <option value="us">United States</option>
+                                                            <option value="ca">Canada</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="delivery-postcode" class="form-label">Delivery
+                                                            Postcode<span class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control"
+                                                            id="delivery-postcode" placeholder="LNDN 123" required>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="delivery-date" class="form-label">Date<span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" id="delivery-date"
+                                                            placeholder="Select date" required>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="deliver-by" class="form-label">Deliver By<span
+                                                                class="text-danger">*</span></label>
+                                                        <select class="form-select" id="deliver-by" required>
+                                                            <option value="" selected>Deliver by</option>
+                                                            <option value="15:00">3:00 PM</option>
+                                                            <option value="16:00">4:00 PM</option>
+                                                            <option value="17:00">5:00 PM</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox"
+                                                                id="delivery-helper" checked>
+                                                            <label class="form-check-label label-text"
+                                                                for="delivery-helper">
+                                                                Helper
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="card-body collapse show" id="delivery1-body">
-                                            <div class="mb-3">
-                                                <label for="delivery-country" class="form-label">Country<span
-                                                        class="text-danger">*</span></label>
-                                                <select class="form-select" id="delivery-country" required>
-                                                    <option value="" selected>Select country</option>
-                                                    <option value="uk">United Kingdom</option>
-                                                    <option value="us">United States</option>
-                                                    <option value="ca">Canada</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="delivery-postcode" class="form-label">Delivery Postcode<span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" class="form-control is-invalid"
-                                                    id="delivery-postcode" placeholder="LNDN 123" required>
-                                                <!-- <div class="invalid-feedback">
-                                                    <i class="bi bi-exclamation-triangle me-1"></i>Invalid postcode
-                                                </div> -->
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="delivery-date" class="form-label">Date<span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" class="form-control" id="delivery-date"
-                                                    placeholder="Select date" required>
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="deliver-by" class="form-label">Deliver By<span
-                                                        class="text-danger">*</span></label>
-                                                <select class="form-select" id="deliver-by" required>
-                                                    <option value="" selected>Deliver by</option>
-                                                    <option value="15:00">3:00 PM</option>
-                                                    <option value="16:00">4:00 PM</option>
-                                                    <option value="17:00">5:00 PM</option>
-                                                </select>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="delivery-helper"
-                                                        checked>
-                                                    <label class="form-check-label label-text" for="delivery-helper">
-                                                        Helper
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Helper Info Tooltip -->
-                            <div class="position-absolute helper-info-tooltip"
-                                style="bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 100;">
-                                <div class="card shadow-sm">
-                                    <div class="card-body p-2 text-center">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <i class="bi bi-info-circle me-2"></i>
-                                            <small>Helper can be booked if extra assistance is required at either
-                                                collection or delivery</small>
                                         </div>
                                     </div>
                                 </div>
@@ -659,41 +744,73 @@
 
                             <div class="row">
                                 <div class="col-md-4 mb-3">
-                                    <label for="contact-name" class="form-label">First Name<span
+                                    <label for="contact-name" class="form-label">Your Name<span
                                             class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" placeholder="Enter your name" id="first-name" required>
+                                    <input type="text" class="form-control" placeholder="Enter your name"
+                                        id="first-name" required>
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <label for="email" class="form-label">Email<span
                                             class="text-danger">*</span></label>
-                                    <input type="email" class="form-control" placeholder="user@gmail.com" id="email" required>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="user@gmail.com" id="email"
+                                            required>
+                                        <span class="input-group-text d-none" id="email-check">
+                                            <i class="bi bi-check-circle-fill text-success"></i>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="col-md-4 mb-3">
-                                    <label for="contact-number" class="form-label">Contact Number<span
+                                    <label for="contact-number" class="form-label">Telephone Number<span
                                             class="text-danger">*</span></label>
-                                    <input type="tel" class="form-control" id="contact-number" required>
+                                    <div class="input-group">
+                                        <select class="form-select" id="country-code" style="max-width: 80px;">
+                                            <option value="+44" selected>+44</option>
+                                            <option value="+1">+1</option>
+                                            <option value="+33">+33</option>
+                                            <option value="+49">+49</option>
+                                        </select>
+                                        <input type="tel" class="form-control" id="contact-number" placeholder="(000) 000-000" required>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Navigation Buttons -->
                         <div class="form-navigation mt-4 d-flex justify-content-end">
-                            <button type="button" class="btn btn-outline-primary me-2 step-1-only" id="cancelBtn">Cancel</button>
-                            <button type="button" class="btn btn-outline-secondary me-2" id="prevBtn">BACK</button>
-                            <button type="button" class="next-btn-color" id="nextBtn">NEXT STEP</button>
+                            <button type="button" class="btn btn-outline-raq me-2 step-1-only"
+                                id="cancelBtn">CANCEL</button>
+                            <button type="button" class="btn btn-outline-raq me-2" id="prevBtn">BACK</button>
+                            <button type="button" class="next-btn-color" id="nextBtn" disabled>NEXT STEP</button>
                         </div>
                     </form>
                 </div>
+                <!-- Success Page -->
+            <div id="successPage" class="text-center py-5" style="display: none;">
+                <div class="success-container">
+                    <img src="images/success.png" alt="Success" class="mb-4" style="width: 100px;">
+                    <h2 class="mb-3">Thanks for your quote request</h2>
+                    <p class="mb-2">Your reference for this is: <span id="quoteReference" class="fw-bold">Q******</span></p>
+                    <p class="mb-4">It's being processed now and one of our staff will get back to you shortly.</p>
+                    <p class="mb-4">Please <span class="fw-bold">check your spam or junk email folder</span> if our response doesn't arrive in your inbox.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn btn-outline-raq px-4" onclick="requestAnotherQuote()">REQUEST ANOTHER QUOTE</button>
+                        <button class="btn btn-goto px-4" onclick="goToHomepage()">GO TO HOMEPAGE</button>
+                    </div>
+                </div>
             </div>
+            </div>
+
+            
         </div>
     </section>
 
-    <!-- Add this right before the closing body tag -->
+    <!-- Vehicle Information Modal -->
     <div class="vehicle-info-modal modal fade" id="vehicleInfoModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <h5 class="modal-title">Vehicle Information</h5> -->
+                    <h5 class="modal-title">Vehicle Information</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -736,40 +853,7 @@
                         <div class="section vehicle-info">
                             <h3 class="section-title fw-semibold">Vehicle Information</h3>
                             <hr class="section-divider mb-3">
-                            <div class="info-row">
-                                <span class="info-label">Internal Length</span>
-                                <span class="info-value">7M</span>
-                            </div>
-
-                            <div class="info-row">
-                                <span class="info-label">Internal Width</span>
-                                <span class="info-value">2.4M</span>
-                            </div>
-
-                            <div class="info-row">
-                                <span class="info-label">Internal Height</span>
-                                <span class="info-value">2.5M</span>
-                            </div>
-
-                            <div class="info-row">
-                                <span class="info-label">Loadspace Volume</span>
-                                <span class="info-value">40M³</span>
-                            </div>
-
-                            <div class="info-row">
-                                <span class="info-label">Maximum Carrying Capacity</span>
-                                <span class="info-value">8500kg</span>
-                            </div>
-
-                            <div class="info-row">
-                                <span class="info-label">Pallet capacity (Standard/Euro)</span>
-                                <span class="info-value">14</span>
-                            </div>
-
-                            <div class="info-row">
-                                <span class="info-label">Tail Lift Carrying Capacity</span>
-                                <span class="info-value">1000kg</span>
-                            </div>
+                            <!-- Dynamic content will be inserted here -->
                         </div>
                     </div>
                 </div>
@@ -777,7 +861,6 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
